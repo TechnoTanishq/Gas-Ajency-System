@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="adminlogin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora&effect=shadow-multiple">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+     <script src="adminlogin.js"></script>
+
+</head>
+<body>
+    
+    <div class="heading">       <!-- navbar -->
+        <img src="mylogo.png" alt="">
+        <h4>BlueFlame Gas Ajency</h4>
+    </div>
+    <div class="right">HelpLine : 0240-2270706</div>
+    <div class="container">
+        <div class="form">
+            <h1 style="text-align: center;" id="check">Admin Login</h1>
+            <div class="welcome">
+                Hello Admin, Please log in to continue..
+            </div>
+            
+            <div class="flex-column">
+                <label>Username</label>
+            </div>
+            <div class="inputForm">
+                <i class="fa-solid fa-user"></i>
+                <input placeholder="login Email" id="username" class="input" type="text" >
+            </div>
+
+            <div class="flex-column">
+                <label>Password </label>
+            </div>
+            <div class="inputForm">
+                <i class="fa-solid fa-lock"></i>
+                <input placeholder="Enter your Password"  id="password"  class="input" type="password" >
+            </div>
+            
+            
+            <button class="button-submit" onclick="checkLogin()" id="submitBtn">Login</button>
+        </div>
+    </div>  
+    <div class="gasImage"><img src="hello.png" alt="image"></div>
+
+
+</body>
+</html>

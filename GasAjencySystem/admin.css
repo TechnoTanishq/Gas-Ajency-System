@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(91, 161, 232);
+  background-color: #eeeded;
+}
+.header{
+  background-color: #ffffff;
+  color: rgb(4, 19, 72);
+  font-family: lora, sans-serif;
+  max-height: 70px;
+  font-size: 30px;
+  position: relative;
+  display: flex;
+  padding: 15px;
+  border-bottom: 8px solid #0d1282;
+  border-top: 8px solid #0d1282;
+  justify-content: space-between;
+}
+.heading{
+    display: flex;
+}
+#searchbox{
+    width: 200px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options input{
+    padding: 20px;
+}
+.options i{
+    margin: 10px;
+    font-size: 20px;
+    translate: -40px;   
+}
+.tooltip::after {
+    font-size: 10px;
+    width: 60px;
+    margin-bottom: 5px;
+    content: attr(data-url);
+    position: absolute;
+    top: 120%; /* Position above the anchor */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #100441;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 5;
+}
+.tooltip:hover::after {
+    opacity: 1;
+}
+.customerList{
+    border: 4px solid red;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 20px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: rgb(251, 232, 123);
+  }
+.customer{
+    border: 2px solid black;
+}
+
+
+/* General styles for the admin page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.heading img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.heading h4 {
+    margin: 0;
+    color: #0d1282;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.options a {
+    margin-right: 20px;
+}
+
+.options input[type="search"] {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.options i {
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Styles for customer info divs */
+.customer {
+    border: 5px solid #ee1111;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.customer p {
+    margin: 5px 0;
+}
+
+.customer p strong {
+    color: #333;
+}
+
+/* Additional styles if needed */
+.customerList {
+    display: flex;
+    flex-direction: column;
+}

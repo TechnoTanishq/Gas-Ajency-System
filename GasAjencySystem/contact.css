@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(242, 244, 246);
+    font-family: Arial, sans-serif;
+  }
+  
+  .heading {
+    background-color: #ffffff;
+    color: rgb(4, 19, 72);
+    font-family: lora, sans-serif;
+    height: 70px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 5px solid rgb(247, 219, 6);
+    border-top: 5px solid rgb(247, 219, 6);
+    justify-content: space-between  ;
+  }
+#home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home a
+{
+ text-decoration: none;
+ font-size: 20px;
+ font-weight: 600;
+ padding: 5px;
+ border: 1px solid black;
+ border-radius: 5px;
+}
+#home a:hover{
+  background-color: rgba(4, 4, 61, 0.959);
+  color: white;
+}
+main{
+  margin:20px 60px; /*(top-btm) (left-right)*/
+}
+  .main-content {
+    padding: 20px;
+  }
+  
+  .about-section, .contact-section, .form-section, .mission-section, .vision-section, .values-section {
+    margin-bottom: 40px;
+  }
+  
+  .about-section h1, .contact-section h1, .form-section h2, .mission-section h2, .vision-section h2, .values-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(4, 19, 72);
+  }
+  
+  .about-section p, .contact-section p, .form-section p, .mission-section p, .vision-section p, .values-section p, .values-section ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .values-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .values-section li {
+    margin-bottom: 10px;
+  }
+  
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-section label {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: rgb(4, 19, 72);
+  }
+  
+  .form-section input, .form-section textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-section button {
+    padding: 15px;
+    background-color: blue;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-section button:hover {
+    background-color: darkblue;
+  }
+  
+  .footer {
+    background-color:#3d3c86;
+    color: white;
+    padding-top: 40px ;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+  }
+  
+  .footer-section h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: rgb(247, 219, 6);
+  }
+  
+  .footer-section p, .footer-section a {
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: rgb(247, 219, 6);
+  }
+  
+  .footer-bottom {
+    padding: 10px 0;
+    background-color: #040439;
+    color: #ccc;
+    font-size: 1.5em;
+  }
+  
+  .footer-section .fab, .footer-section .fas {
+    margin-right: 10px;
+  }
+  

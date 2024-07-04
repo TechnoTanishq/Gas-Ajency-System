@@ -1,0 +1,161 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Page</title>
+        <link rel="stylesheet" href="userPage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    </head>
+
+    <body>
+        <div class="sidepane">
+            <a href="#profile"><i class="fa-solid fa-user"> Profile</i></a>
+            <a href="#dashboard"><i class="fa-solid fa-bell"> Dashboard</i></a>
+            <a href="#booking"><i class="fa-solid fa-shop"> Book cylinder</i></a>
+            <a href="#booking_history"><i class="fa-solid fa-clock"> History</i></a>
+        </div>
+        <header>
+            <div class="logo">
+                <img src="mylogo.png" alt="logo" />
+                <h4>BlueFlame Gas Ajency</h4>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#booking">Book Cylinder</a></li>
+                    <li><a href="#booking_history">Booking History</a></li>
+                </ul>
+            </nav>
+
+            <button id="logout" onclick="logout()">Logout</button>
+        </header>
+        <!-- main section starts here -->
+        <main>
+
+            <div class="welcome" >
+                Hello Customer , BlueFlame Gas Welcomes you...
+            </div>
+            <section id="profile">
+                <p>My Profile </p>
+                <div class="profile">
+                    <img src="avatar.png" alt="myself" height="200px" width="200px">
+                    <div class="myinfo">
+                        <label for="username">Name :</label>
+                        <input type="text" id="name" value="[name]" readonly>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" value="[Email]" readonly>
+
+                        <label for="contact">Contact Number:</label>
+                        <input type="text" id="contact" value="[Contact Number]" readonly>
+
+                        <label for="addresst">Address:</label>
+                        <textarea name="address" id="address" rows="4" style="font-size: 30px;"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dashboard">
+                <p id="head">Dashboard </p>
+                <div class="dashboard">
+                    <div style="font-size: 30px;">
+                        Remaining Barrels : <p id="remBarrels" style="display: inline-block;">12</p>
+                    </div>
+                    <div class="activity">
+                        <h1 style="font-size: 30px;">Recent Activity</h1>
+                        <p>no recent activity detected..</p>
+                    </div>
+                    <div class="notification">
+                        <h1 style="font-size: 30px;">Notification</h1>
+                        <p>no new notifications</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section id="booking">
+                <p>Book a Cylinder</p>
+                <div class="booking">
+                    <form action="#" method="post" class="bookingForm">
+                        <label for="address">Delivery Address:</label>
+                        <textarea id="devaddress" name="address" rows="4"></textarea>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <label for="Amount">Amount :</label>
+                        <input type="text" id="amt" name="Amount" value="Rs. 1110.00" disabled>
+
+
+                        <label for="payment-method">Payment Method:</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="cod">Cash on Delivery</option>
+                            <option value="online">Online Payment</option>
+                            <option value="upi">UPI</option>
+                            <option value="card">Credit/Debit Card</option>
+                        </select>
+
+                    </form>
+                    <button type="submit" onclick="bookCylinder()" class="bookBtn">Book Now</button>
+                </div>
+
+            </section>
+            <section id="booking_history">
+                <p>Booking History</p>
+                <div class="booking_history">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Payment Method</th>
+                                <th>Delivery Address</th>
+                                <th>Mobile</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- history is add here -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-section about">
+                        <h1>About Us</h1>
+                        <p>
+                            BlueFlame Gas Agency is a premier provider of liquefied petroleum gas
+                        </p>
+                    </div>
+                    <div class="footer-section contact">
+                        <h1>Contact Us</h1>
+                        <p><i class="fas fa-phone"></i> Phone: (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> Email: info@blueflamegas.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Address: 123 Energy Lane, Greenfield, TX 78901</p>
+                    </div>
+                    <div class="footer-section social">
+                        <h1>Follow Us</h1>
+                        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2024 BlueFlame Gas Agency | Designed by Tanishq Kathar &#10084
+                </div>
+            </div>
+        </footer>
+        <script src="userPage.js" type="module"></script>
+    </body>
+    </html>

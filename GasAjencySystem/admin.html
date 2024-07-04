@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+</head>
+<body>
+    <header class="header">
+        <div class="heading">
+            <img src="mylogo.png" alt="" />
+            <h4>BlueFlame Gas Ajency- Admin</h4>
+        </div>
+        <div class="options">
+            <a href="#customers"><i class="fa-solid fa-users tooltip" data-url="customers" style="font-size: 30px; color: #0d1282;"></i></a>
+            <a href="index.html"><i class="fa-solid fa-house tooltip" style="font-size: 30px;" data-url="Home"></i></a>
+            <input type="search" id="searchbox" placeholder="search a customer.."><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <main style="margin: 30px;">
+        <section id="customerList">
+            <h1 style="font-size: 40px;">All Customers</h1>
+            <div class="customerList" id="customer-list">
+                <!-- Customer data will be appended here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- External JavaScript file -->
+    <script src="admin.js" type="module"></script>
+</body>
+</html>

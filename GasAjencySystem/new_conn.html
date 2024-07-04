@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get new Connection</title>
+    <link rel="stylesheet" href="new_conn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <button class="back" onclick="goBack()"><i class="fa-solid fa-circle-arrow-left"></i></button>
+    <div class="container">
+        <h1><strong><u>Registration Form for New Connection</u></strong></h1>
+        <div class="form">
+            <form class="content" id="registrationForm">
+                    <label for="name">Your Name:    </label>
+                    <input type="text" id="name" required placeholder="your name">
+                    <label for="Fname">Father's Name:</label>
+                    <input type="text" id="Fname" required placeholder="father's name">
+                    <label for="Sname">Surname :     </label>
+                    <input type="text" id="Sname" required placeholder="surname">
+
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Your residential address" required>
+                    
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" rows="3" id="city" name="city" placeholder="Your city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">ZIP Code</label>
+                        <input type="text" id="zip" name="zip" placeholder="postal address " required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="IND">India</option>
+                            <option value="CA">Canada</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="AU">Australia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Email">Email id:</label>
+                        <input type="text" id="Email" placeholder="email id ">
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile no:</label>
+                        <input type="text" id="mobile" placeholder="10-digit mobile number">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Unique Username: </label>
+                        <input type="text" id="username" placeholder="Try to combine alphabets & digits ">
+                    </div>
+                    <hr>
+                    <br>
+
+                    <div style="font-size: 20px;"><input type="checkbox" id="terms" required style="transform: scale(2); margin:5px;"> I'd read all terms & conditions</div>
+                    <div>
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+            </form>
+        </div>
+    </div>
+    <script src="new_con.js" type="module"></script>
+</body>
+</html>
